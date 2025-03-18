@@ -231,8 +231,8 @@ document.addEventListener("DOMContentLoaded", function () {
 				"Created a system for students to evaluate other group members, where instructors can create unlimited groups with unlimited members. The system saves data to a database, eliminating manual work for instructors.",
 			images: [
 				"images/Peernew1.jpg",
-				"images/Peernew2.jpg",
-				"images/Peernew3.jpg",
+				"images/peernew2.jpg",
+				"images/peernew3.jpg",
 			],
 			tech: ["HTML5", "CSS3", "JavaScript", "Database", "LMS Integration"],
 		},
