@@ -238,7 +238,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 		{
 			title: "Worked on complex survey activity",
-			description: "Created Survey Activity where student's make multiple choice selection selected data saved in database they can come at the end of week to see results results were shown in bar graph and pie chart with the help of highchart plugin",
+			description:
+				"Created Survey Activity where student's make multiple choice selection selected data saved in database they can come at the end of week to see results results were shown in bar graph and pie chart with the help of highchart plugin",
 			images: [
 				"images/imagesup1.jpg",
 				"images/imagesup2.jpg",
@@ -248,7 +249,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 		{
 			title: "Scenario based activity",
-			description: "where student's can click each scenario go through each scenario based multiple choice quiz print summary at the end",
+			description:
+				"where student's can click each scenario go through each scenario based multiple choice quiz print summary at the end",
 			images: [
 				"images/Imagexl1.jpg",
 				"images/Imagexl2.jpg",
@@ -496,4 +498,20 @@ document.addEventListener("DOMContentLoaded", function () {
 		`;
 		certificationsContainer.appendChild(colDiv);
 	});
+});
+
+// Disable right-click
+document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+// Disable text selection
+document.addEventListener("selectstart", (e) => e.preventDefault());
+
+// Disable specific keyboard shortcuts (e.g., Ctrl+U, Ctrl+Shift+I)
+document.addEventListener("keydown", (e) => {
+	if (
+		e.ctrlKey &&
+		(e.key === "u" || e.key === "U" || e.key === "i" || e.key === "I")
+	) {
+		e.preventDefault();
+	}
 });
