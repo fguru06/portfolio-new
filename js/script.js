@@ -241,9 +241,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			description:
 				"Created Survey Activity where student's make multiple choice selection selected data saved in database they can come at the end of week to see results results were shown in bar graph and pie chart with the help of highchart plugin",
 			images: [
-				"images/imagesup1.jpg",
-				"images/imagesup2.jpg",
-				"images/imagesup3.jpg",
+				"images/Imagesup1.jpg",
+				"images/Imagesup2.jpg",
+				"images/Imagesup3.jpg",
 			],
 			tech: ["HTML5", "CSS3", "JavaScript", "LMS", "Responsive Design"],
 		},
