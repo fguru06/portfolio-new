@@ -317,7 +317,7 @@ h4 {
 	transform: translateY(-3px);
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 	color: white;
-	background-color: var(--secondary-color); /* Updated hover color */
+	background-color: #495057;
 }
 
 .hero-buttons .btn.btn-outline-primary {

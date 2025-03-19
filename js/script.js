@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		{
 			title: "Worked on complex survey activity",
 			description:
-				"Created Survey Activity where student's make multiple choice selection selected data saved in database they can come at the end of week to see results results were shown in bar graph and pie chart with the help of highchart plugin",
+				"Created Survey Activity where students make multiple choice selections. Selected data is saved in a database, and they can return at the end of the week to see results. Results are displayed in bar graphs and pie charts using the Highcharts plugin.",
 			images: [
 				"images/Imagesup1.jpg",
 				"images/Imagesup2.jpg",
@@ -250,7 +250,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		{
 			title: "Scenario based activity",
 			description:
-				"where student's can click each scenario go through each scenario based multiple choice quiz print summary at the end",
+				"Developed an interactive activity where students can click on each scenario to explore scenario-specific content. Each scenario includes a multiple-choice quiz that evaluates the student's understanding. At the end of the activity, students can view and print a detailed summary of their responses and scores. All student responses are saved in a database, allowing instructors to view them through an instructor view with easy chart visuals for better analysis.",
 			images: [
 				"images/Imagexl1.jpg",
 				"images/Imagexl2.jpg",
@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		{
 			title: "Worked on maps",
 			description:
-				"Click and Reveal mapped info where student clicks on each state and some information will show under the map Used highcharts plugin Accessible and Responsive maps",
+				"Click and Reveal mapped info where students click on each state and some information is displayed under the map. Used Highcharts plugin for accessible and responsive maps.",
 			images: [
 				"images/Imagemap1.jpg",
 				"images/Imagemap2.jpg",
@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		{
 			title: "Multiple Choice activity",
 			description:
-				"Multiple Choice activity where student's can select multiple choice quiz multiple selection quiz print out their submissions in pdf",
+				"Multiple Choice activity where students can select multiple-choice quiz options and print out their submissions in PDF format. All responses are saved in a database for instructor review.",
 			images: [
 				"images/Imager1.jpg",
 				"images/Imager2.jpg",
@@ -306,7 +306,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		{
 			title: "Worked on Presentation",
 			description:
-				"Presentation where student's can select senario buttons each senario has information in tabs format",
+				"Presentation where students can select scenario buttons, with each scenario displaying information in a tabbed format.",
 			images: [
 				"images/Imageru1.jpg",
 				"images/Imageru2.jpg",
