@@ -548,8 +548,8 @@ h4 {
 }
 
 .testimonial-text {
-	font-size: 1.1rem;
-	line-height: 1.8;
+	font-size: 0.9rem;
+	line-height: 1.4;
 	color: var(--gray-color);
 	margin-bottom: 20px;
 }
