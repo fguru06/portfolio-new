@@ -159,16 +159,14 @@ h4 {
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.skills-section .section-title,
-.contact-section .section-title {
+.skills-section .section-title {
 	text-align: left;
 	font-size: 1.5rem;
 	margin-bottom: 20px;
 	padding-bottom: 10px;
 }
 
-.skills-section .section-title::after,
-.contact-section .section-title::after {
+.skills-section .section-title::after {
 	left: 0;
 	transform: none;
 	width: 50px;
