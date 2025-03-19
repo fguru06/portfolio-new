@@ -423,16 +423,6 @@ h4 {
 	gap: 15px;
 }
 
-.project-links .btn {
-	border-radius: 5px;
-	font-weight: 500;
-	transition: all var(--transition-speed);
-}
-
-.project-links .btn:hover {
-	transform: translateY(-3px);
-}
-
 /* Swiper Styles for Projects */
 .project-swiper {
 	width: 100%;
@@ -454,8 +444,26 @@ h4 {
 	background-color: var(--primary-color);
 }
 
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
 	bottom: -4px !important;
+}
+
+/* Add this new CSS rule */
+.project-card .col-md-6:first-child {
+	width: 50%;
+}
+
+/* Add this new CSS rule */
+.project-card .col-md-6:last-child {
+	width: 50%;
+}
+
+/* Add this new CSS rule */
+.project-card .col-md-12 {
+	width: 100%;
 }
 
 /* Certifications Section */

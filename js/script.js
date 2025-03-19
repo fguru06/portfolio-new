@@ -228,7 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		{
 			title: "Peer Evaluation Group Activity",
 			description:
-				"Created a system for students to evaluate other group members, where instructors can create unlimited groups with unlimited members. The system saves data to a database, eliminating manual work for instructors.",
+				"Developed a system enabling students to evaluate their group members, while instructors can create unlimited groups with unlimited members. The system automates data storage in a database, eliminating manual effort for instructors.",
 			images: [
 				"images/Peernew1.jpg",
 				"images/peernew2.jpg",
@@ -237,9 +237,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			tech: ["HTML5", "CSS3", "JavaScript", "Database", "LMS Integration"],
 		},
 		{
-			title: "Worked on complex survey activity",
+			title: "Complex Survey Activity",
 			description:
-				"Created Survey Activity where students make multiple choice selections. Selected data is saved in a database, and they can return at the end of the week to see results. Results are displayed in bar graphs and pie charts using the Highcharts plugin.",
+				"Designed a survey activity where students make multiple-choice selections, with data saved in a database. Students can revisit to view results displayed as bar graphs and pie charts using the Highcharts plugin.",
 			images: [
 				"images/Imagesup1.jpg",
 				"images/Imagesup2.jpg",
@@ -248,9 +248,34 @@ document.addEventListener("DOMContentLoaded", function () {
 			tech: ["HTML5", "CSS3", "JavaScript", "LMS", "Responsive Design"],
 		},
 		{
-			title: "Scenario based activity",
+			title: "Personalized Nursing Flashcard System with Instructor Analytics",
 			description:
-				"Developed an interactive activity where students can click on each scenario to explore scenario-specific content. Each scenario includes a multiple-choice quiz that evaluates the student's understanding. At the end of the activity, students can view and print a detailed summary of their responses and scores. All student responses are saved in a database, allowing instructors to view them through an instructor view with easy chart visuals for better analysis.",
+				"Developed using Vue.js 3, this platform empowers nursing students with an interactive flashcard experience. Students can flip cards to reveal medication information, organize their study sessions by favoriting and sorting cards, and create personalized flashcards for sharing. The application includes an instructor-facing analytics dashboard, providing insights into student engagement and progress.",
+			tech: [
+				"Vue.js 3",
+				"HTML5",
+				"CSS3",
+				"JavaScript",
+				"Accessibility",
+				"Responsive Design",
+			],
+		},
+		{
+			title: "Printable PDF Functionality for LMS",
+			description:
+				"Developed a feature allowing students to print course content as PDFs. The feature crawls through interactive activities and extracts all content into a single print preview, enabling offline access to course materials.",
+			tech: [
+				"HTML5",
+				"CSS3",
+				"JavaScript",
+				"Accessibility",
+				"Responsive Design",
+			],
+		},
+		{
+			title: "Scenario-Based Activity",
+			description:
+				"Created an interactive activity where students explore scenario-specific content by clicking on scenarios. Each scenario includes a quiz, and students can view and print a summary of their responses and scores. All data is saved in a database for instructor analysis with visual charts.",
 			images: [
 				"images/Imagexl1.jpg",
 				"images/Imagexl2.jpg",
@@ -259,20 +284,28 @@ document.addEventListener("DOMContentLoaded", function () {
 			tech: ["HTML5", "CSS3", "JavaScript", "LMS", "Responsive Design"],
 		},
 		{
+			title: "Interactive Nursing Practice Simulator",
+			description:
+				"This project was a Vue.js 3 application (using the Composition API) designed to simulate healthcare nursing practice. Users interact with a responsive and fully accessible body image, clicking on designated “hotspots” to reveal detailed descriptions of specific medical scenarios. The application also includes a note-taking feature, allowing users to record observations and save their completed assessments as PDFs.",
+			tech: [
+				"Vue.js 3",
+				"HTML5",
+				"CSS3",
+				"JavaScript",
+				"Accessibility",
+				"Responsive Design",
+			],
+		},
+		{
 			title: "Custom LMS Themes",
 			description:
-				"Built themes using JavaScript and CSS that aligned with partner branding requirements, enhancing front-end development and LMS customization for various educational institutions.",
-			images: [
-				"images/project2-1-placeholder.jpg",
-				"images/project2-2-placeholder.jpg",
-				"images/project2-3-placeholder.jpg",
-			],
+				"Developed custom themes using JavaScript and CSS to align with partner branding, enhancing LMS customization and front-end development for educational institutions.",
 			tech: ["HTML5", "CSS3", "JavaScript", "LMS", "Responsive Design"],
 		},
 		{
-			title: "Worked on maps",
+			title: "Interactive Maps",
 			description:
-				"Click and Reveal mapped info where students click on each state and some information is displayed under the map. Used Highcharts plugin for accessible and responsive maps.",
+				"Implemented a click-and-reveal map feature where students click on states to display information. Used the Highcharts plugin for accessible and responsive maps.",
 			images: [
 				"images/Imagemap1.jpg",
 				"images/Imagemap2.jpg",
@@ -287,9 +320,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			],
 		},
 		{
-			title: "Multiple Choice activity",
+			title: "Multiple Choice Activity",
 			description:
-				"Multiple Choice activity where students can select multiple-choice quiz options and print out their submissions in PDF format. All responses are saved in a database for instructor review.",
+				"Developed a multiple-choice quiz activity where students can select answers and print their submissions as PDFs. All responses are stored in a database for instructor review.",
 			images: [
 				"images/Imager1.jpg",
 				"images/Imager2.jpg",
@@ -304,9 +337,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			],
 		},
 		{
-			title: "Worked on Presentation",
+			title: "Interactive Presentation",
 			description:
-				"Presentation where students can select scenario buttons, with each scenario displaying information in a tabbed format.",
+				"Created a presentation feature where students can explore scenarios through buttons, with each scenario displaying information in a tabbed format.",
 			images: [
 				"images/Imageru1.jpg",
 				"images/Imageru2.jpg",
@@ -323,12 +356,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		{
 			title: "Responsive Media Framework",
 			description:
-				"Participated in developing an in-house company-owned framework that accelerated the production of responsive media content. Led the R&D team for accessibility testing and development.",
-			images: [
-				"images/project3-1-placeholder.jpg",
-				"images/project3-2-placeholder.jpg",
-				"images/project3-3-placeholder.jpg",
-			],
+				"Contributed to the development of an in-house framework for creating responsive media content. Led the R&D team for accessibility testing and development.",
 			tech: [
 				"HTML5",
 				"CSS3",
@@ -357,6 +385,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			projectCard.className = "project-card";
 			projectCard.innerHTML = `
 				<div class="row">
+					${
+						project.images && project.images.length > 0
+							? `
 					<div class="col-md-6">
 						<div class="swiper project-swiper">
 							<div class="swiper-wrapper">
@@ -388,6 +419,23 @@ document.addEventListener("DOMContentLoaded", function () {
 							</div>
 						</div>
 					</div>
+						`
+							: `
+					<div class="col-md-12">
+						<div class="project-info">
+							<h3 class="project-title">${project.title}</h3>
+							<p class="project-description">${project.description}</p>
+							<div class="project-tech">
+								${project.tech.map((tech) => `<span class="tech-tag">${tech}</span>`).join("")}
+							</div>
+							<div class="project-links">
+								<a href="#" class="btn btn-sm btn-outline-primary">View Demo</a>
+								<a href="#" class="btn btn-sm btn-outline-secondary">Details</a>
+							</div>
+						</div>
+					</div>
+						`
+					}
 				</div>
 			`;
 			projectsContainer.appendChild(projectCard);
