@@ -576,18 +576,23 @@ document.addEventListener("DOMContentLoaded", function () {
 	const certificationsContainer = document.querySelector(
 		".certifications-container .row"
 	);
-	certifications.forEach((cert, index) => {
-		const colDiv = document.createElement("div");
-		colDiv.className = "col-md-6";
-		colDiv.innerHTML = `
-			<div class="certification-item">
-				<h4 class="cert-name">${cert.title}</h4>
-				<p class="cert-issuer">${cert.issuer}</p>
-				<p class="cert-date">${cert.date}</p>
-			</div>
-		`;
-		certificationsContainer.appendChild(colDiv);
-	});
+
+	if (certificationsContainer) {
+		certifications.forEach((cert) => {
+			const colDiv = document.createElement("div");
+			colDiv.className = "col-md-6";
+			colDiv.innerHTML = `
+				<div class="certification-item">
+					<h4 class="cert-name">${cert.title}</h4>
+					<p class="cert-issuer">${cert.issuer}</p>
+					<p class="cert-date">${cert.date}</p>
+				</div>
+			`;
+			certificationsContainer.appendChild(colDiv);
+		});
+	} else {
+		console.error("Certifications container not found in the DOM.");
+	}
 });
 
 // Disable right-click
