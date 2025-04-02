@@ -235,6 +235,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				"images/peernew3.jpg",
 			],
 			tech: ["HTML5", "CSS3", "JavaScript", "Database", "LMS Integration"],
+			video: "assets/videos/Peer-Evaluation-Form2.webm", // Corrected path
 		},
 		{
 			title: "Complex Survey Activity",
@@ -246,6 +247,8 @@ document.addEventListener("DOMContentLoaded", function () {
 				"images/Imagesup3.jpg",
 			],
 			tech: ["HTML5", "CSS3", "JavaScript", "LMS", "Responsive Design"],
+			video:
+				"assets/videos/Pediatric-Health-Promotions-and-Immunizations-Case-Scenarios.webm", // Corrected path
 		},
 		{
 			title: "Personalized Nursing Flashcard System with Instructor Analytics",
@@ -282,6 +285,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				"images/Imagexl3.jpg",
 			],
 			tech: ["HTML5", "CSS3", "JavaScript", "LMS", "Responsive Design"],
+			video: "assets/videos/Program-Project-and-Portfolio-Management.webm",
 		},
 		{
 			title: "Interactive Nursing Practice Simulator",
@@ -318,6 +322,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				"Accessibility",
 				"Responsive Design",
 			],
+			video: "assets/videos/Prescriptive-Authority-Websites.webm",
 		},
 		{
 			title: "Multiple Choice Activity",
@@ -335,6 +340,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				"Accessibility",
 				"Responsive Design",
 			],
+			video: "assets/videos/Making-the-Best-of-Your-Field-Experience.webm",
 		},
 		{
 			title: "Interactive Presentation",
@@ -414,7 +420,9 @@ document.addEventListener("DOMContentLoaded", function () {
 								${project.tech.map((tech) => `<span class="tech-tag">${tech}</span>`).join("")}
 							</div>
 							<div class="project-links">
-								<a href="#" class="btn btn-sm btn-outline-primary">View Demo</a>
+								<a href="#" class="btn btn-sm btn-outline-primary" data-video-src="${
+									project.video
+								}">View Demo</a>
 								<a href="#" class="btn btn-sm btn-outline-secondary">Details</a>
 							</div>
 						</div>
@@ -429,7 +437,9 @@ document.addEventListener("DOMContentLoaded", function () {
 								${project.tech.map((tech) => `<span class="tech-tag">${tech}</span>`).join("")}
 							</div>
 							<div class="project-links">
-								<a href="#" class="btn btn-sm btn-outline-primary">View Demo</a>
+								<a href="#" class="btn btn-sm btn-outline-primary" data-video-src="${
+									project.video
+								}">View Demo</a>
 								<a href="#" class="btn btn-sm btn-outline-secondary">Details</a>
 							</div>
 						</div>
@@ -476,6 +486,38 @@ document.addEventListener("DOMContentLoaded", function () {
 		showMoreButton.style.display = "block";
 		projectsContainer.appendChild(showMoreButton);
 	});
+
+	// Handle "View Demo" button clicks
+	document.addEventListener("click", (e) => {
+		if (e.target.classList.contains("btn-outline-primary")) {
+			e.preventDefault();
+			const videoSrc = e.target.getAttribute("data-video-src");
+			const videoPlayer = document.getElementById("videoPlayer");
+			if (videoSrc) {
+				// Update the video source and reload the player
+				videoPlayer.querySelector("source").src = videoSrc;
+				videoPlayer.load();
+
+				// Show the modal
+				const videoModal = new bootstrap.Modal(
+					document.getElementById("videoModal")
+				);
+				videoModal.show();
+
+				// Play the video automatically when the modal opens
+				videoPlayer.play();
+			}
+		}
+	});
+
+	// Pause the video when the modal is closed
+	document
+		.getElementById("videoModal")
+		.addEventListener("hidden.bs.modal", () => {
+			const videoPlayer = document.getElementById("videoPlayer");
+			videoPlayer.pause();
+			videoPlayer.currentTime = 0; // Reset the video to the beginning
+		});
 
 	// Certifications data and generation
 	const certifications = [
@@ -549,10 +591,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Disable right-click
-document.addEventListener("contextmenu", (e) => e.preventDefault());
+//document.addEventListener("contextmenu", (e) => e.preventDefault());
 
 // Disable text selection
-document.addEventListener("selectstart", (e) => e.preventDefault());
+//document.addEventListener("selectstart", (e) => e.preventDefault());
 
 // Disable specific keyboard shortcuts (e.g., Ctrl+U, Ctrl+Shift+I)
 document.addEventListener("keydown", (e) => {
