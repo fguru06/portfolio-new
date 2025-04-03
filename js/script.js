@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		{ name: "Bootstrap", width: "90%" },
 		{ name: "Accessibility", width: "95%" },
 		{ name: "Responsive Design", width: "95%" },
+		{ name: "AI Powered Development", width: "85%" },
 		{ name: "TypeScript", width: "70%" },
 		{ name: "Node.js", width: "65%" },
 		{ name: "Git", width: "80%" },
