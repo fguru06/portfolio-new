@@ -522,6 +522,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Certifications data and generation
 	const certifications = [
 		{
+			title: "Learning Next.js",
+			issuer: "LinkedIn Learning",
+			date: "January 2025",
+		},
+		{
 			title: "Building RESTful APIs with Node.js and Express",
 			issuer: "LinkedIn Learning",
 			date: "December 2024",
