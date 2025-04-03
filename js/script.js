@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		{ name: "Vue.js", width: "75%" },
 		{ name: "React.js", width: "50%" },
 		{ name: "Bootstrap", width: "90%" },
+		{ name: "Accessibility", width: "95%" },
 		{ name: "Responsive Design", width: "95%" },
 		{ name: "TypeScript", width: "70%" },
 		{ name: "Node.js", width: "65%" },
