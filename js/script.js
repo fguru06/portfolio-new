@@ -228,6 +228,22 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Projects data and generation
 	const projects = [
 		{
+			title: "Interactive Human Body with Hotspots & Quiz",
+			description:
+				"An interactive human body illustration with clickable hotspots to reveal information about different body parts. Includes a quiz feature to test knowledge. Built with modern web technologies for accessibility and engagement.",
+			images: [
+				"assets/interactives/humanbody/assets/Hbody.166ab625.jpg",
+			],
+			tech: [
+				"HTML5",
+				"CSS3",
+				"JavaScript",
+				"Accessibility",
+				"Responsive Design",
+			],
+			demo: "assets/interactives/humanbody/index.html",
+		},
+		{
 			title: "Peer Evaluation Group Activity",
 			description:
 				"Developed a system enabling students to evaluate their group members, while instructors can create unlimited groups with unlimited members. The system automates data storage in a database, eliminating manual effort for instructors.",
@@ -422,9 +438,7 @@ document.addEventListener("DOMContentLoaded", function () {
 								${project.tech.map((tech) => `<span class="tech-tag">${tech}</span>`).join("")}
 							</div>
 							<div class="project-links">
-								<a href="#" class="btn btn-sm btn-outline-primary" data-video-src="${
-									project.video
-								}">View Demo</a>
+								${project.demo ? `<a href="${project.demo}" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">View Demo</a>` : project.video ? `<a href="#" class="btn btn-sm btn-outline-primary" data-video-src="${project.video}">View Demo</a>` : ""}
 								<a href="#" class="btn btn-sm btn-outline-secondary">Details</a>
 							</div>
 						</div>
@@ -439,9 +453,7 @@ document.addEventListener("DOMContentLoaded", function () {
 								${project.tech.map((tech) => `<span class="tech-tag">${tech}</span>`).join("")}
 							</div>
 							<div class="project-links">
-								<a href="#" class="btn btn-sm btn-outline-primary" data-video-src="${
-									project.video
-								}">View Demo</a>
+								${project.demo ? `<a href="${project.demo}" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">View Demo</a>` : project.video ? `<a href="#" class="btn btn-sm btn-outline-primary" data-video-src="${project.video}">View Demo</a>` : ""}
 								<a href="#" class="btn btn-sm btn-outline-secondary">Details</a>
 							</div>
 						</div>
@@ -491,7 +503,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// Handle "View Demo" button clicks
 	document.addEventListener("click", (e) => {
-		if (e.target.classList.contains("btn-outline-primary")) {
+		// Only intercept if the button is for a video demo, not for a direct demo link
+		if (
+			e.target.classList.contains("btn-outline-primary") &&
+			e.target.hasAttribute("data-video-src")
+		) {
 			e.preventDefault();
 			const videoSrc = e.target.getAttribute("data-video-src");
 			const videoPlayer = document.getElementById("videoPlayer");
