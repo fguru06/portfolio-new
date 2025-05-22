@@ -236,32 +236,32 @@ document.addEventListener("DOMContentLoaded", function () {
 			],
 			tech: [
 				"HTML5",
-        "CSS3",
-        "JavaScript",
-        "Vue.js",
-        "Responsive Design",
-        "Accessibility"
+				"CSS3",
+				"JavaScript",
+				"Vue.js",
+				"Responsive Design",
+				"Accessibility"
 			],
 			demo: "assets/interactives/humanbody/index.html",
 		},
 		{
-    title: "Likert Scale Health Survey Interactive",
-    description:
-        "A Likert scale-based health survey interactive built with modern web technologies. Users can rate statements on a scale, and results are visualized for instant feedback. Designed for accessibility and responsive use in educational or healthcare settings.",
-    images: [
-		"images/Likertsurvey1.png",
-		"images/Likertsurvey2.png",
-		],
-    tech: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Vue.js",
-        "Responsive Design",
-        "Accessibility"
-    ],
-    demo: "assets/interactives/likertscale-health/index.html"
-},
+			title: "Likert Scale Health Survey Interactive",
+			description:
+				"A Likert scale-based health survey interactive built with modern web technologies. Users can rate statements on a scale, and results are visualized for instant feedback. This interactive supports multiple users, saves data in a database, and displays user averages in a graph for enhanced engagement and analytics. Designed for accessibility and responsive use in educational or healthcare settings.",
+			images: [
+				"images/Likertsurvey1.png",
+				"images/Likertsurvey2.png",
+			],
+			tech: [
+				"HTML5",
+				"CSS3",
+				"JavaScript",
+				"Vue.js",
+				"Responsive Design",
+				"Accessibility"
+			],
+			demo: "assets/interactives/likertscale-health/index.html"
+		},
 		{
 			title: "Peer Evaluation Group Activity",
 			description:
