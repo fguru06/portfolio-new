@@ -263,6 +263,24 @@ document.addEventListener("DOMContentLoaded", function () {
 			demo: "assets/interactives/likertscale-health/index.html"
 		},
 		{
+			title: "Peer Evaluation (Self & Peer with Analytics)",
+			description:
+				"A robust peer evaluation tool that enables both self and peer assessments within groups. This interactive allows students to rate themselves and their peers on various criteria, with results visualized using Highcharts for clear, actionable insights. The system automatically calculates and displays group and individual averages, making it easy for instructors and students to identify strengths and areas for improvement. Designed for accessibility, responsive use, and seamless integration into eLearning environments.",
+			images: [
+				"images/Peer1.jpg",
+				"images/Peer2.jpg"
+			],
+			tech: [
+				"HTML5",
+				"CSS3",
+				"JavaScript",
+				"Highcharts",
+				"Accessibility",
+				"Responsive Design"
+			],
+			demo: "assets/interactives/peereval/index.html"
+		},
+		{
 			title: "Peer Evaluation Group Activity",
 			description:
 				"Developed a system enabling students to evaluate their group members, while instructors can create unlimited groups with unlimited members. The system automates data storage in a database, eliminating manual effort for instructors.",
@@ -407,7 +425,8 @@ document.addEventListener("DOMContentLoaded", function () {
 				"Accessibility",
 				"Responsive Design",
 			],
-		},
+		}
+		
 	];
 
 	const projectsContainer = document.getElementById("projects-container");
