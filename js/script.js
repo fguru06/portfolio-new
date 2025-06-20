@@ -267,8 +267,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			description:
 				"A robust peer evaluation tool that enables both self and peer assessments within groups. This interactive allows students to rate themselves and their peers on various criteria, with results visualized using Highcharts for clear, actionable insights. The system automatically calculates and displays group and individual averages, making it easy for instructors and students to identify strengths and areas for improvement. Designed for accessibility, responsive use, and seamless integration into eLearning environments.",
 			images: [
-				"images/Peer1.jpg",
-				"images/Peer2.jpg"
+				"images/peereval1.png",
+				"images/peereval2.png",
+				"images/peereval3.png",
 			],
 			tech: [
 				"HTML5",
@@ -279,18 +280,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				"Responsive Design"
 			],
 			demo: "assets/interactives/peereval/index.html"
-		},
-		{
-			title: "Peer Evaluation Group Activity",
-			description:
-				"Developed a system enabling students to evaluate their group members, while instructors can create unlimited groups with unlimited members. The system automates data storage in a database, eliminating manual effort for instructors.",
-			images: [
-				"images/Peernew1.jpg",
-				"images/peernew2.jpg",
-				"images/peernew3.jpg",
-			],
-			tech: ["HTML5", "CSS3", "JavaScript", "Database", "LMS Integration"],
-			video: "assets/videos/Peer-Evaluation-Form2.webm", // Corrected path
 		},
 		{
 			title: "Complex Survey Activity",
@@ -425,7 +414,19 @@ document.addEventListener("DOMContentLoaded", function () {
 				"Accessibility",
 				"Responsive Design",
 			],
-		}
+		},
+		{
+			title: "Peer Evaluation Group Activity",
+			description:
+				"Developed a system enabling students to evaluate their group members, while instructors can create unlimited groups with unlimited members. The system automates data storage in a database, eliminating manual effort for instructors.",
+			images: [
+				"images/Peernew1.jpg",
+				"images/peernew2.jpg",
+				"images/peernew3.jpg",
+			],
+			tech: ["HTML5", "CSS3", "JavaScript", "Database", "LMS Integration"],
+			video: "assets/videos/Peer-Evaluation-Form2.webm", // Corrected path
+		},
 		
 	];
 
