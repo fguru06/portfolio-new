@@ -242,6 +242,23 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       demo: "assets/interactives/humanbody/index.html",
     },
+	{
+      title: "Interactive Flashcard Health Learning Tool",
+      description:
+        "An engaging health education flashcard system designed for interactive learning. This tool features a card-based interface where students can review health and medical concepts through an intuitive flip-card experience. The application provides a structured learning environment with modern responsive design, making it perfect for health education courses and medical training programs.",
+      images: [
+        "https://images.pexels.com/photos/7722918/pexels-photo-7722918.jpeg",
+      ],
+      tech: [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Vue.js",
+        "Responsive Design",
+        "Accessibility",
+      ],
+      demo: "assets/interactives/flashcard-health/index.html",
+    },
     {
       title: "Likert Scale Health Survey Interactive",
       description:
@@ -288,36 +305,6 @@ document.addEventListener("DOMContentLoaded", function () {
       tech: ["HTML5", "CSS3", "JavaScript", "LMS", "Responsive Design"],
       video:
         "assets/videos/Pediatric-Health-Promotions-and-Immunizations-Case-Scenarios.webm", // Corrected path
-    },
-    {
-      title: "Interactive Flashcard Health Learning Tool",
-      description:
-        "An engaging health education flashcard system designed for interactive learning. This tool features a card-based interface where students can review health and medical concepts through an intuitive flip-card experience. The application provides a structured learning environment with modern responsive design, making it perfect for health education courses and medical training programs.",
-      images: [
-        "https://images.pexels.com/photos/7722918/pexels-photo-7722918.jpeg",
-      ],
-      tech: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Vue.js",
-        "Responsive Design",
-        "Accessibility",
-      ],
-      demo: "assets/interactives/flashcard-health/index.html",
-    },
-    {
-      title: "Personalized Nursing Flashcard System with Instructor Analytics",
-      description:
-        "Developed using Vue.js 3, this platform empowers nursing students with an interactive flashcard experience. Students can flip cards to reveal medication information, organize their study sessions by favoriting and sorting cards, and create personalized flashcards for sharing. The application includes an instructor-facing analytics dashboard, providing insights into student engagement and progress.",
-      tech: [
-        "Vue.js 3",
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Accessibility",
-        "Responsive Design",
-      ],
     },
     {
       title: "Printable PDF Functionality for LMS",
